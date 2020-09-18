@@ -1,4 +1,4 @@
-package com.technogise.test;
+package com.technogise.test.simulator;
 
 import com.technogise.test.exception.InvalidCellException;
 import com.technogise.test.exception.InvalidPieceException;
@@ -8,13 +8,13 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class ApplicationTest {
+public class ChessSimulatorTest {
 
-    private Application application;
+    private ChessSimulator application;
 
     @Before
     public void init() {
-        application = new Application();
+        application = new ChessSimulator();
     }
 
     @Test

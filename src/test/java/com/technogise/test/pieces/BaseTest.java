@@ -1,6 +1,6 @@
 package com.technogise.test.pieces;
 
-import com.technogise.test.Application;
+import com.technogise.test.simulator.ChessSimulator;
 import org.junit.Assert;
 import org.junit.Before;
 
@@ -8,11 +8,11 @@ import java.util.List;
 
 public class BaseTest {
 
-    private Application simulationApp;
+    private ChessSimulator simulationApp;
 
     @Before
     public void init() {
-        simulationApp = new Application();
+        simulationApp = new ChessSimulator();
     }
 
     protected List<String> testChessSimulationApp(String input) {
