@@ -1,5 +1,6 @@
-package com.technogise.test;
+package com.technogise.test.pieces;
 
+import com.technogise.test.Application;
 import org.junit.Assert;
 import org.junit.Before;
 

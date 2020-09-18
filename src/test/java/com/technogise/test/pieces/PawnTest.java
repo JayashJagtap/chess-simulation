@@ -1,4 +1,4 @@
-package com.technogise.test;
+package com.technogise.test.pieces;
 
 import org.junit.Assert;
 import org.junit.Test;

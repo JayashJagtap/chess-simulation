@@ -1,4 +1,4 @@
-package com.technogise.test;
+package com.technogise.test.pieces;
 
 import com.technogise.test.exception.InvalidPieceException;
 import com.technogise.test.pieces.Piece;
