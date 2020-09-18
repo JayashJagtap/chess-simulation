@@ -6,6 +6,9 @@ import com.technogise.test.decider.RowDecider;
 import java.util.ArrayList;
 import java.util.List;
 
+/*King Can move only 1 step at a time in all 8 directions
+* (horizontal, vertical and diagonal)
+*/
 public class King extends Piece {
     King() {
         super("King");
@@ -13,9 +16,6 @@ public class King extends Piece {
 
     @Override
     public List<String> getPossibleMoves(int curRow, char curCol) {
-        //Can move only 1 step at a time in all 8 directions (horizontal, vertical
-        //and diagonal)
-
         List<String> possibleMoves = new ArrayList<>();
 
         if(RowDecider.canMoveUp(curRow,1)) {

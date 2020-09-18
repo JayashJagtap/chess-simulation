@@ -3,6 +3,9 @@ package com.technogise.test.pieces;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Rook Can move across the board only vertically and horizontally
+ */
 public class Rook extends Piece {
     Rook() {
         super("Rook");
@@ -10,7 +13,6 @@ public class Rook extends Piece {
 
     @Override
     public List<String> getPossibleMoves(int curRow, char curCol) {
-        //Can move across the board only vertically and horizontally
         List<String> possibleMoves = new ArrayList<>();
         int colIndex = 'A';
         for(int i=1;i<=8;i++) {

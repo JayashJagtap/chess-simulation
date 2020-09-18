@@ -6,6 +6,11 @@ import com.technogise.test.decider.RowDecider;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Horse Can move across the board only in 2.5 steps
+ *          (2 vertical steps and 1 horizontal step)
+ *          (2 horizontal steps and 1 vertical step)
+ */
 public class Horse extends Piece {
     Horse() {
         super("Horse");
@@ -13,10 +18,6 @@ public class Horse extends Piece {
 
     @Override
     public List<String> getPossibleMoves(int curRow, char curCol) {
-        //Can move across the board only in 2.5 steps
-        // (2 vertical steps and 1 horizontal step)
-        // (2 horizontal steps and 1 vertical step)
-
         List<String> possibleMoves = new ArrayList<>();
 
         if(RowDecider.canMoveUp(curRow,2)) {

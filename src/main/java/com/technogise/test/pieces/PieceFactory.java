@@ -1,5 +1,7 @@
 package com.technogise.test.pieces;
 
+import com.technogise.test.exception.InvalidPieceException;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,6 +19,9 @@ public class PieceFactory {
     }
 
     public static Piece getPiece(String name) {
+        if(!piecesMap.containsKey(name)) {
+            throw new InvalidPieceException("Please provide one of the valid piece names [King/Queen/Bishop/Horse/Rook/Pawn]");
+        }
         return piecesMap.get(name);
     }
 }

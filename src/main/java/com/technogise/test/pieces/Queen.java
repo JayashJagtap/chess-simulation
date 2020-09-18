@@ -6,6 +6,9 @@ import com.technogise.test.decider.RowDecider;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Queen Can move across the board in all 8 directions
+ */
 public class Queen extends Piece {
     Queen() {
         super("Queen");
@@ -13,7 +16,6 @@ public class Queen extends Piece {
 
     @Override
     public List<String> getPossibleMoves(int curRow, char curCol) {
-        //Can move across the board in all 8 directions
         List<String> possibleMoves = new ArrayList<>();
 
         // Vertical

@@ -6,6 +6,9 @@ import com.technogise.test.decider.RowDecider;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Bishop Can move across the board only diagonally
+ */
 public class Bishop extends Piece {
     Bishop() {
         super("Bishop");
@@ -13,7 +16,6 @@ public class Bishop extends Piece {
 
     @Override
     public List<String> getPossibleMoves(int curRow, char curCol) {
-        //Can move across the board only diagonally
         List<String> possibleMoves = new ArrayList<>();
 
         //Towards left top
