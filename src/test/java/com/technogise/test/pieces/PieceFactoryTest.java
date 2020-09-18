@@ -1,8 +1,6 @@
 package com.technogise.test.pieces;
 
 import com.technogise.test.exception.InvalidPieceException;
-import com.technogise.test.pieces.Piece;
-import com.technogise.test.pieces.PieceFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,6 +1,5 @@
 package com.technogise.test.decider;
 
-import com.technogise.test.decider.ColumnDecider;
 import org.junit.Assert;
 import org.junit.Test;
 

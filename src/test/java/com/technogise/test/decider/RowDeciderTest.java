@@ -1,6 +1,5 @@
 package com.technogise.test.decider;
 
-import com.technogise.test.decider.RowDecider;
 import org.junit.Assert;
 import org.junit.Test;
 
