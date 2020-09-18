@@ -1,4 +1,4 @@
-package com.technogise.test;
+package com.technogise.test.pieces;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Rook extends Piece {
     }
 
     @Override
-    List<String> getPossibleMoves(int curRow, char curCol) {
+    public List<String> getPossibleMoves(int curRow, char curCol) {
         //Can move across the board only vertically and horizontally
         List<String> possibleMoves = new ArrayList<>();
         int colIndex = 'A';

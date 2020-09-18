@@ -1,4 +1,4 @@
-package com.technogise.test;
+package com.technogise.test.pieces;
 
 import java.util.List;
 
@@ -12,5 +12,5 @@ public abstract class Piece {
     public String getName() {
         return name;
     }
-    abstract List<String> getPossibleMoves(int curRow, char curCol);
+    public abstract List<String> getPossibleMoves(int curRow, char curCol);
 }

@@ -1,4 +1,4 @@
-package com.technogise.test;
+package com.technogise.test.pieces;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 public class PieceFactory {
     private static Map<String, Piece> piecesMap = new HashMap<>();
 
-    PieceFactory() {
+    static {
         piecesMap.put("King", new King());
         piecesMap.put("Queen", new Queen());
         piecesMap.put("Bishop", new Bishop());
